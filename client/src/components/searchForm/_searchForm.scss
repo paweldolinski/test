@@ -1,0 +1,61 @@
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  &__form {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    justify-content: center;
+
+    &--middle {
+      width: 45%;
+    }
+  }
+
+  &__input {
+    border: none;
+    color: black;
+    font-size: 16px;
+    transition: box-shadow .3s ease-out;
+    cursor: pointer;
+    padding: 4px;
+    padding-left: 40px;
+    opacity: 0.8;
+    transition: 0.2s all;
+    height: 38px;
+    width: 100%;
+
+    &:focus {
+      outline: transparent;
+    }
+
+    &--middle {
+      height: 46px;
+    }
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &::placeholder {
+      color: black;
+    }
+
+  }
+
+  label {
+    opacity: 0;
+    position: absolute;
+  }
+
+  &__icon {
+    width: 19px;
+    position: absolute;
+    right: 40px;
+
+  }
+}

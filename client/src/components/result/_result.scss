@@ -1,0 +1,129 @@
+.result {
+  margin: 10px;
+  background: white;
+  max-width: 300px;
+  transition: 0.3s;
+  border-radius: 10px;
+  overflow: hidden;
+  border: solid #3d6647 3px;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.5);
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__img-wrapper {
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+  }
+
+  &__img {
+    min-height: 100%;
+  }
+
+  &__vegeterian {
+    color: green;
+    position: absolute;
+    top: 10px;
+    padding: 5px 3px;
+    background: white;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+  }
+
+  &__heart-btn {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    width: 30px;
+    background: white;
+    padding: 10px 5px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    opacity: 0.85;
+    border: none;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &__heart {
+    width: 100%;
+    cursor: pointer;
+  }
+
+  &__info {
+    padding: 10px;
+    height: 93px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: black;
+    position: relative;
+  }
+
+  span {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid black;
+    position: absolute;
+    transform: rotate(-46deg);
+    left: 45px;
+    top: 36px;
+    z-index: 10;
+  }
+
+  &__title {
+    margin-bottom: 5px;
+    font-size: 20px;
+    margin-top: 0;
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+  }
+
+  &__title-hovered {
+    position: absolute;
+    position: absolute;
+    top: 20px;
+    left: 48px;
+    background: lightgray;
+    padding: 3px 10px;
+    border-radius: 5px;
+    transition: 0.4s;
+  }
+
+  &__btn-wrapper {
+    padding: 10px 50px;
+    width: 133px;
+    border-radius: 4px;
+    border: none;
+    background: #3d6647;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+    align-self: flex-end;
+
+    &:hover {
+      transform: scale(0.95);
+    }
+
+    &:focus {
+      outline: 1px black solid;
+    }
+  }
+}
